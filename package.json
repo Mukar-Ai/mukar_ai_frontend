@@ -1,0 +1,15 @@
+{
+  "name": "mukar-platform",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build:frontend": "cd frontend && npm install && npm run build",
+    "db:schema": "wrangler d1 execute mukar-db --remote --file=./worker/schema.sql",
+    "db:schema:local": "wrangler d1 execute mukar-db --local --file=./worker/schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

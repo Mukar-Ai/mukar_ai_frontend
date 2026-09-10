@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 4px;
+  background: #6e7a72;
+  border-radius: 3px;
+  opacity: 0.6;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #b8892b;
+  cursor: pointer;
+  border: 2px solid #edE6d3;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #b8892b;
+  cursor: pointer;
+  border: 2px solid #ede6d3;
+}
+.mukar-checkbox {
+  accent-color: #b8892b;
+  width: 18px;
+  height: 18px;
+}
+.mukar-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.mukar-scroll::-webkit-scrollbar-thumb {
+  background: #6e7a72;
+  border-radius: 2px;
+}
